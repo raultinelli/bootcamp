@@ -12,7 +12,7 @@ nunjucks.configure('views', {
 app.use(express.urlencoded({ extended: false }))
 app.set('view engine', 'njk')
 
-const users = ['Raul', 'Viviani']
+const users = ['Raul', 'Viviani', 'teste']
 
 app.get('/', (req, res) => {
   return res.render('list', { users })
